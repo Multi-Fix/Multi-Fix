@@ -3,42 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Multi-Fix | Todo lo que tu hogar necesita, con una sola llamada. Expertos en cámaras, electricidad, climatización, plomería, electrodomésticos y domótica." />
+  <meta name="description" content="Multi-Fix | Instalación, reparación y mantenimiento para tu hogar. Cámaras, electricidad, climas, plomería, domótica y más.">
   <title>Multi-Fix | Servicios Técnicos Profesionales</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
+  <!-- Navbar -->
+  <header class="header">
     <nav class="navbar">
-      <a href="index.html" class="logo">🔧Multi-Fix </a>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
+      <a href="index.html" class="logo">🔧 Multi-Fix</a>
+      <button class="menu-btn" id="menu-btn">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#porqueelegirnos">Por qué elegirnos</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
-    <div class="hero">
-      <h2>Todo lo que tu hogar necesita,<br> con una sola llamada.</h2>
-      <p>Instalación, mantenimiento y reparación de sistemas eléctricos, plomería, climas, cámaras y más.</p>
+
+    <!-- Hero -->
+    <div class="hero" id="inicio">
+      <h1>Soluciones técnicas <span>rápidas, seguras y profesionales</span></h1>
+      <p>Reparamos, instalamos y mejoramos todo en tu hogar o negocio. Desde una toma eléctrica hasta un sistema completo de cámaras o climatización.</p>
       <a href="#contacto" class="btn">Solicita tu presupuesto</a>
     </div>
   </header>
 
+  <!-- Servicios -->
   <section id="servicios" class="servicios">
     <h2>Nuestros Servicios</h2>
+    <p class="intro">Contamos con un equipo de técnicos especializados para cada área. Confía en Multi-Fix para resolver cualquier necesidad de tu hogar o empresa.</p>
     <div class="grid">
-      <a href="servicios/camaras.html" class="card"><h3>📷 Cámaras de seguridad</h3><p>Protege lo que más importa con vigilancia profesional.</p></a>
-      <a href="servicios/electricidad.html" class="card"><h3>⚡ Electricidad</h3><p>Instalaciones y reparaciones eléctricas seguras y eficientes.</p></a>
-      <a href="servicios/climatizacion.html" class="card"><h3>❄️ Climatización</h3><p>Montaje, limpieza y reparación de aires acondicionados.</p></a>
-      <a href="servicios/plomeria.html" class="card"><h3>🚰 Plomería</h3><p>Solución rápida y efectiva para fugas o instalaciones.</p></a>
-      <a href="servicios/electrodomesticos.html" class="card"><h3>🔌 Electrodomésticos</h3><p>Reparamos tus equipos del hogar con garantía.</p></a>
-      <a href="servicios/domotica.html" class="card"><h3>🏠 Domótica</h3><p>Convierte tu hogar en un espacio inteligente.</p></a>
+      <a href="servicios/camaras.html" class="card">
+        <h3>📷 Cámaras de seguridad</h3>
+        <p>Instalamos y configuramos sistemas de vigilancia profesional, con acceso desde tu celular.</p>
+      </a>
+      <a href="servicios/electricidad.html" class="card">
+        <h3>⚡ Electricidad</h3>
+        <p>Instalaciones eléctricas seguras, detección de fallas y mantenimiento preventivo.</p>
+      </a>
+      <a href="servicios/climatizacion.html" class="card">
+        <h3>❄️ Climatización</h3>
+        <p>Montaje, limpieza y reparación de aires acondicionados y sistemas HVAC.</p>
+      </a>
+      <a href="servicios/plomeria.html" class="card">
+        <h3>🚰 Plomería</h3>
+        <p>Fugas, instalaciones, drenaje o presión de agua. Solucionamos cualquier problema.</p>
+      </a>
+      <a href="servicios/electrodomesticos.html" class="card">
+        <h3>🔌 Electrodomésticos</h3>
+        <p>Reparamos refrigeradores, lavadoras, hornos y más con piezas garantizadas.</p>
+      </a>
+      <a href="servicios/domotica.html" class="card">
+        <h3>🏠 Domótica</h3>
+        <p>Convierte tu casa en un hogar inteligente y controla todo desde tu teléfono.</p>
+      </a>
     </div>
   </section>
 
+  <!-- Por qué elegirnos -->
+  <section id="porqueelegirnos" class="porqueelegirnos">
+    <h2>¿Por qué elegir Multi-Fix?</h2>
+    <div class="reasons">
+      <div>
+        <h3>🧰 Experiencia y confianza</h3>
+        <p>Más de 10 años brindando soluciones técnicas en hogares y negocios. Nuestro trabajo habla por nosotros.</p>
+      </div>
+      <div>
+        <h3>⏱️ Respuesta rápida</h3>
+        <p>Sabemos que el tiempo vale oro. Acudimos el mismo día o al siguiente, según tu ubicación.</p>
+      </div>
+      <div>
+        <h3>💬 Atención personalizada</h3>
+        <p>Nos adaptamos a tus necesidades y te explicamos todo con claridad antes de comenzar.</p>
+      </div>
+      <div>
+        <h3>✅ Garantía de servicio</h3>
+        <p>Cada trabajo incluye garantía por escrito. Si algo no queda bien, lo corregimos sin costo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opiniones -->
+  <section id="opiniones" class="opiniones">
+    <h2>Lo que opinan nuestros clientes</h2>
+    <div class="testimonios">
+      <div class="testimonio">
+        <p>"Excelente servicio, llegaron el mismo día y dejaron todo funcionando perfecto. Muy recomendados."</p>
+        <span>— Laura G. / Mérida</span>
+      </div>
+      <div class="testimonio">
+        <p>"Instalaron mis cámaras con mucha profesionalidad, me explicaron todo y ahora puedo ver mi casa desde el celular."</p>
+        <span>— Daniel R. / Cancún</span>
+      </div>
+      <div class="testimonio">
+        <p>"Tenía un problema eléctrico serio y lo resolvieron en menos de una hora. Muy eficientes."</p>
+        <span>— Maribel T. / Valladolid</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
   <section id="contacto" class="contacto">
     <h2>Contáctanos</h2>
+    <p>Solicita tu presupuesto sin compromiso. Cuéntanos qué necesitas y te responderemos lo antes posible.</p>
     <form id="formContacto">
       <input type="text" id="nombre" placeholder="Tu nombre" required />
       <input type="email" id="email" placeholder="Tu correo electrónico" required />
@@ -48,6 +118,7 @@
     <p class="whatsapp">📱 Escríbenos por <a href="https://wa.me/5210000000000" target="_blank">WhatsApp</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Multi-Fix | Todo lo que tu hogar necesita, con una sola llamada.</p>
   </footer>
