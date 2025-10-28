@@ -342,5 +342,143 @@ footer {
     margin: 0.5rem 0 1rem;
   }
 }
+/* ===== FOOTER MULTI-FIX ===== */
+.footer {
+  color: #fff;
+  margin-top: 3rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.footer-top {
+  background: linear-gradient(135deg, #004aad, #002a70);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 3rem 8%;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin: 0.6rem 0;
+}
+
+.footer-column a {
+  color: #ffffffcc;
+  text-decoration: none;
+  transition: color 0.25s ease;
+  font-size: 0.95rem;
+}
+
+.footer-column a:hover {
+  color: #ffe600;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 0 1 300px;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffe600;
+  margin-bottom: 1rem;
+}
+
+/* Redes sociales */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.social-links a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.2s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.social-links a svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-links a:hover {
+  background: #ffe600;
+  color: #004aad;
+  transform: translateY(-4px);
+}
+
+/* Parte inferior */
+.footer-bottom {
+  background: #001f4f;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  margin: 0.3rem 0;
+  opacity: 0.9;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .footer-column {
+    margin: 1rem 0;
+  }
+
+  .footer-center {
+    margin: 1rem 0 1.5rem;
+  }
+
+  .footer-logo {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-top {
+    padding: 3.5rem 15%;
+  }
+
+  .footer-logo {
+    font-size: 2.3rem;
+  }
+
+  .footer-column a {
+    font-size: 1rem;
+  }
+}
 
 }
