@@ -61,6 +61,7 @@ body {
 /* Hero */
 .hero {
   padding: 4rem 2rem;
+  text-align: center;
 }
 
 .hero h1 {
@@ -117,8 +118,8 @@ body {
   background: white;
   border-radius: 10px;
   padding: 1.5rem;
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -208,141 +209,6 @@ body {
 }
 
 /* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #003f88;
-  color: white;
-  font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .menu-btn {
-    display: block;
-  }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #004aad;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 70%;
-    border-radius: 0 0 0 10px;
-  }
-  .nav-links.show {
-    display: flex;
-  }
-  /* ===== Footer con iconos SVG inline ===== */
-.footer {
-  color: white;
-  margin-top: 2rem;
-  font-size: 0.95rem;
-}
-
-.footer-top {
-  background: #004aad; /* azul principal */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2.5rem 1rem;
-  text-align: center;
-}
-
-.footer-column {
-  flex: 1;
-  min-width: 200px;
-  margin: 1rem 0;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column a {
-  color: #ffffffcc;
-  text-decoration: none;
-  display: block;
-  margin: 0.4rem 0;
-  transition: color 0.25s;
-}
-
-.footer-column a:hover {
-  color: #ffe600;
-}
-
-.footer-center {
-  text-align: center;
-  flex: 0 1 260px;
-}
-
-.footer-logo {
-  font-size: 1.6rem;
-  margin-bottom: 0.8rem;
-  color: #ffe600;
-}
-
-/* Social icons */
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 0.8rem;
-}
-
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.08);
-  color: #fff;
-  text-decoration: none;
-  transition: transform 0.18s ease, background 0.18s;
-}
-
-.social-links a svg {
-  width: 18px;
-  height: 18px;
-  display: block;
-  color: inherit; /* usa currentColor en SVG */
-}
-
-.social-links a:hover {
-  transform: translateY(-4px);
-  background: #ffe600;
-  color: #004aad;
-}
-
-/* Parte inferior */
-.footer-bottom {
-  background: #001f4f;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.85rem;
-  border-top: 1px solid rgba(255,255,255,0.08);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-top {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-column {
-    margin: 1rem 0;
-  }
-
-  .footer-center {
-    margin: 0.5rem 0 1rem;
-  }
-}
-/* ===== FOOTER MULTI-FIX ===== */
 .footer {
   color: #fff;
   margin-top: 3rem;
@@ -358,7 +224,6 @@ footer {
   flex-wrap: wrap;
   padding: 3rem 8%;
   gap: 2rem;
-  box-sizing: border-box;
 }
 
 .footer-column {
@@ -481,4 +346,23 @@ footer {
   }
 }
 
+/* ===== Responsive Navbar ===== */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #004aad;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 70%;
+    border-radius: 0 0 0 10px;
+    padding: 1rem;
+  }
+  .nav-links.show {
+    display: flex;
+  }
 }
