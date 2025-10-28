@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Instalación profesional de cámaras de seguridad Multi-Fix. Protección total para tu hogar o negocio.">
-    <title>Cámaras de Seguridad | Multi-Fix</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Instalación profesional de cámaras de seguridad Multi-Fix. Protección total para tu hogar o negocio.">
+  <title>Cámaras de Seguridad | Multi-Fix</title>
+  <link rel="stylesheet" href="../estilos/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<header>
+  <!-- ENCABEZADO -->
+  <header>
     <nav class="navbar">
-        <a href="../index.html" class="logo">🔧 Multi-Fix</a>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../index.html#servicios">Servicios</a></li>
-            <li><a href="../index.html#contacto">Contacto</a></li>
-        </ul>
+      <a href="../index.html" class="logo">🔧 Multi-Fix</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#servicios">Servicios</a></li>
+        <li><a href="../index.html#contacto">Contacto</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle">☰</button>
     </nav>
-</header>
+  </header>
 
-<section class="servicio-detalle">
-    <h1>📷 Instalación de Cámaras de Seguridad</h1>
-    <p>En Multi-Fix instalamos sistemas de vigilancia profesional para hogares, negocios y oficinas. Trabajamos con cámaras IP, CCTV, visión nocturna y grabación en la nube.</p>
+  <!-- SECCIÓN DETALLE -->
+  <section class="servicio-detalle">
+    <div class="container">
+      <h1>📷 Instalación de Cámaras de Seguridad</h1>
+      <p>En <strong>Multi-Fix</strong> instalamos sistemas de vigilancia profesional para hogares, negocios y oficinas. 
+      Trabajamos con cámaras IP, CCTV, visión nocturna y grabación en la nube.</p>
 
-    <h3>Incluye:</h3>
-    <ul>
-        <li>Instalación de cámaras analógicas o IP</li>
-        <li>Configuración de DVR/NVR y acceso remoto</li>
-        <li>Conexión a celular o computadora</li>
-        <li>Mantenimiento y reemplazo de cámaras</li>
-    </ul>
+      <div class="detalle-grid">
+        <div class="detalle-texto">
+          <h3>Incluye:</h3>
+          <ul>
+            <li>Instalación de cámaras analógicas o IP</li>
+            <li>Configuración de DVR/NVR y acceso remoto</li>
+            <li>Conexión a celular o computadora</li>
+            <li>Mantenimiento y reemplazo de cámaras</li>
+          </ul>
 
-    <p>Ofrecemos equipos de alta resolución y materiales de calidad para garantizar una instalación duradera y segura.</p>
+          <p>Ofrecemos equipos de <strong>alta resolución</strong> y materiales de calidad para garantizar una instalación duradera y segura.</p>
+          <a href="../index.html#contacto" class="btn">Solicita tu cotización</a>
+        </div>
 
-    <a href="../index.html#contacto" class="btn">Solicita tu cotización</a>
-</section>
+        <div class="detalle-imagen">
+          <img src="../img/camaras-seguridad.jpg" alt="Cámaras de seguridad instaladas" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
+  <!-- FOOTER -->
+  <footer>
     <p>© 2025 Multi-Fix | Todo lo que tu hogar necesita, con una sola llamada.</p>
-</footer>
+  </footer>
+
+    <script src="../acciones/script.js"></script>
 </body>
 </html>
