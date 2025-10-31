@@ -26,12 +26,6 @@ body {
   padding: 1rem 2rem;
 }
 
-.logo-img {
-    width: 150px;      /* cambia el tamaño según lo que necesites */
-    height: auto;     /* mantiene la proporción */
-    vertical-align: middle;
-}
-
 .nav-links {
   display: flex;
   gap: 1.5rem;
@@ -56,10 +50,34 @@ body {
   font-size: 1.8rem;
   color: white;
 }
+/* Logo dentro de navbar oculto por defecto */
+.logo-navbar {
+  display: none;
+  width: 100px;
+  height: auto;
+}
+
+/* En móviles: el logo en hero desaparece y el de la navbar se muestra */
+@media (max-width: 768px) {
+  .logo-img {
+    display: none;
+  }
+
+  .logo-navbar {
+    display: block;
+  }
+}
 
 /* Hero */
 .hero {
   padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+}
+
+.info {
+  max-width: 600px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -451,13 +469,11 @@ body {
     align-items: center;
     gap: 1.5rem;
     padding: 1.5rem 0;
-    display: none; /* por defecto oculto */
+
   }
 
   /* 🔹 Esta clase la activa tu JS */
-  .nav-links.show {
-    display: flex; /* se muestra cuando el usuario da clic */
-  }
+
 
   .menu-btn {
     display: block; /* muestra el ícono ☰ */
