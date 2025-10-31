@@ -26,11 +26,10 @@ body {
   padding: 1rem 2rem;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
+.logo-img {
+    width: 150px;      /* cambia el tamaño según lo que necesites */
+    height: auto;     /* mantiene la proporción */
+    vertical-align: middle;
 }
 
 .nav-links {
@@ -318,6 +317,9 @@ body {
   margin-bottom: 1rem;
   display: inline-block;
   transition: transform 0.3s ease;
+  border-bottom: 2px solid #ffffffcc;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .footer-logo:hover {
@@ -435,5 +437,33 @@ body {
   
   .footer-logo {
     font-size: 1.6rem;
+  }
+}
+/* ===== MENÚ RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #005bbb;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    display: none; /* por defecto oculto */
+  }
+
+  /* 🔹 Esta clase la activa tu JS */
+  .nav-links.show {
+    display: flex; /* se muestra cuando el usuario da clic */
+  }
+
+  .menu-btn {
+    display: block; /* muestra el ícono ☰ */
+  }
+
+  .navbar {
+    position: relative;
   }
 }
