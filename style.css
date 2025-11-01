@@ -42,6 +42,50 @@ body {
 .nav-links a:hover {
   opacity: 0.8;
 }
+/* Estilo base del header móvil */
+.menu-movil {
+  display: none; /* Oculto por defecto (solo aparece en móviles) */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1000;
+}
+.logo-movil {
+ display : none;
+}
+/* Botón menú */
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Logo */
+.logo-movil {
+  height: 40px;
+  width: auto;
+}
+
+/* Mostrar solo en móviles */
+@media (max-width: 768px) {
+  .menu-movil {
+    display: flex;
+  }
+    .logo-movil{
+        display: block;
+    }
+  /* Ocultar el logo grande del hero en móviles */
+  .hero .logo-principal {
+    display: none;
+  }
+}
 
 .menu-btn {
   display: none;
@@ -79,6 +123,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+
 }
 
 .hero h1 {
